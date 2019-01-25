@@ -1,9 +1,8 @@
 [build]
-  base = "/4"
-  publish = "/4/dist"
-  functions = "/4/functions"
+  base = "/6"
+  publish = "/6/dist"
+  functions = "/6/functions"
   command = "yarn run build"
-
 
 
 # Redirect a likely mistake
@@ -14,24 +13,24 @@
 
 
 # proxy calls to functions
-# [[redirects]]
-#   from = "/api/*"
-#   to = "/.netlify/functions/:splat"
-#   status = 200
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
 # lockdown the private directory
-# [[redirects]]
-#   from = "/private/*"
-#   to = "/private/proposed"
-#   status = 200
-#   force = true
-#   conditions = {Role = ["admin"]}
+[[redirects]]
+  from = "/private/*"
+  to = "/private/proposed"
+  status = 200
+  force = true
+  conditions = {Role = ["admin"]}
 
-# [[redirects]]
-#   from = "/private/*"
-#   to = "/login"
-#   status = 401
-#   force = true
+[[redirects]]
+  from = "/private/*"
+  to = "/login"
+  status = 401
+  force = true
 
 
 # 404s
