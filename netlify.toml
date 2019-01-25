@@ -19,17 +19,17 @@
   status = 200
 
 # lockdown the private directory
-# [[redirects]]
-#   from = "/private/*"
-#   status = 200
-#   force = true
-#   conditions = {Role = ["admin"]}
+[[redirects]]
+  from = "/private/*"
+  status = 200
+  force = true
+  conditions = {Role = ["admin"]}
 
-# [[redirects]]
-#   from = "/private/*"
-#   to = "/login"
-#   status = 401
-#   force = true
+[[redirects]]
+  from = "/private/*"
+  to = "/login"
+  status = 401
+  force = true
 
 
 # 404s
