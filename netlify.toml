@@ -6,10 +6,10 @@
 
 
 # Redirect a likely mistake
-[[redirects]]
-  from = "/edition/*"
-  to = "/number/:splat"
-  status = 302
+  # [[redirects]]
+  #   from = "/edition/*"
+  #   to = "/number/:splat"
+  #   status = 302
 
 
 # proxy calls to functions
