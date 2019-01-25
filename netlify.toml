@@ -21,9 +21,10 @@
 # lockdown the private directory
 [[redirects]]
   from = "/private/*"
-  to = "/private/proposed/index.html"
+  to = "/private/proposed"
   status = 200
-  conditions = {Role = ["admin"]}
+  [redirects.conditions]
+    Role = ["admin"]
 
 [[redirects]]
   from = "/private/*"
