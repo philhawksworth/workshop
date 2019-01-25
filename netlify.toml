@@ -7,7 +7,7 @@
 
 # Redirect a likely mistake
 [[redirects]]
-  from = "/edition*"
+  from = "/edition/*"
   to = "/number/:splat"
   status = 302
 
