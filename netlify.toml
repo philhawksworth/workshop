@@ -6,10 +6,10 @@
 
 
 # Redirect a likely mistake
-# [[redirects]]
-#   from = "/edition*"
-#   to = "/number/:splat"
-#   status = 302
+[[redirects]]
+  from = "/edition*"
+  to = "/number/:splat"
+  status = 302
 
 
 # proxy calls to functions
@@ -21,7 +21,6 @@
 # lockdown the private directory
 [[redirects]]
   from = "/private/*"
-  to = "/private/proposed"
   status = 200
   [redirects.conditions]
     Role = ["admin"]
@@ -34,12 +33,12 @@
 
 
 # 404s
-# [[redirects]]
-#   from = "/number*"
-#   to = "/edition-not-found"
-#   status = 404
+[[redirects]]
+  from = "/number*"
+  to = "/edition-not-found"
+  status = 404
 
-# [[redirects]]
-#   from = "*"
-#   to = "/404"
-#   status = 404
+[[redirects]]
+  from = "*"
+  to = "/404"
+  status = 404
