@@ -4,7 +4,7 @@ title: My meetup is amazing
 ---
 
 
-## Is it amazing? I MADE CHANGES!
+## Is it amazing? I MADE MOAR CHANGES!
 
 Yes it is. Look at the different editions!
 
