@@ -8,6 +8,8 @@ title: My meetup is amazing
 
 Yes it is. Look at the different editions!
 
+And I want to stage some changes too. Over here. On this branch.
+
 
 ## Editions
 <ul>
