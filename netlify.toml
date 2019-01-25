@@ -23,7 +23,6 @@
   from = "/private/*"
   to = "/private/proposed/index.html"
   status = 200
-  force = true
   conditions = {Role = ["admin"]}
 
 [[redirects]]
